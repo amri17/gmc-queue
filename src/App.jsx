@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Gallery from './gallery/gallery';
 
 import B1_1 from './pages/login/B1_1';
 import B1_2 from './pages/login/B1_2';
@@ -25,11 +24,14 @@ import B3_3 from './pages/estimasi/B3_3';
 import B3_4 from './pages/estimasi/B3_4';
 import B3_5 from './pages/estimasi/B3_5';
 
+// 1. Tambahkan import Multipoli di sini
+import Multipoli from './pages/estimasi/Multipoli';
+
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/gallery" replace />} />
-      <Route path="/gallery" element={<Gallery />} />
+      {/* Halaman utama langsung ke B1.1 */}
+      <Route path="/" element={<B1_1 />} />
 
       <Route path="/login" element={<B1_1 />} />
       <Route path="/masuk" element={<B1_2 />} />
@@ -54,6 +56,12 @@ export default function App() {
       <Route path="/estimasi/antrean-saya" element={<B3_3 />} />
       <Route path="/estimasi/berubah" element={<B3_4 />} />
       <Route path="/estimasi/notifikasi" element={<B3_5 />} />
+
+      {/* 2. Tambahkan rute Multipoli di sini */}
+      <Route path="/estimasi/multipoli" element={<Multipoli />} />
+
+      {/* Jika rute tidak ditemukan, kembalikan ke awal */}
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }

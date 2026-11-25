@@ -3,8 +3,11 @@ import TopBar from '../../components/TopBar';
 import Button from '../../components/Button';
 import Badge from '../../components/Badge';
 import './B3_common.css';
+import { useNavigate } from 'react-router-dom'; // 1. Tambahkan import useNavigate
 
 export default function B3_2() {
+  const nav = useNavigate(); // 2. Inisialisasi useNavigate
+
   return (
     <PhoneFrame caption="B3.2 Detail Estimasi — Poli Umum.">
       <TopBar title="Poli Umum" />
@@ -36,7 +39,10 @@ export default function B3_2() {
       </div>
 
       <div className="bottom-cta">
-        <Button variant="orange">Ambil Nomor Antrean</Button>
+        {/* 3. Tambahkan onClick untuk pindah ke halaman B3.3 (Antrean Saya) */}
+        <Button variant="orange" onClick={() => nav('/estimasi/antrean-saya')}>
+          Ambil Nomor Antrean
+        </Button>
       </div>
     </PhoneFrame>
   );

@@ -1,3 +1,8 @@
+/* === DESAIN ASLI TOPBAR === */
+.topbar-container {
+  margin-bottom: 4px; /* Jarak antar TopBar dengan konten di bawahnya */
+}
+
 .topbar {
   display: flex;
   align-items: center;
@@ -16,7 +21,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .topbar .titles { display: flex; flex-direction: column; gap: 2px; }
-.topbar h3 { font-size: 16px; color: var(--gray-900); }
+.topbar h3 { font-size: 16px; color: var(--gray-900); margin: 0; }
 .topbar .step { font-size: 11px; color: var(--teal-700); font-weight: 600; }
+
+/* === TAMBAHAN: PROGRESS BAR & SUBTITLE === */
+.progress-track {
+  width: 100%;
+  height: 6px;
+  background-color: var(--gray-200);
+  border-radius: 999px;
+  margin: 4px 0 12px 0;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background-color: var(--orange-500);
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.topbar-subtitle {
+  font-size: 11px;
+  color: var(--gray-500);
+  margin-top: -4px;
+  margin-bottom: 14px;
+  font-weight: 500;
+}

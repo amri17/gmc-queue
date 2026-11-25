@@ -13,13 +13,19 @@ export default function B2_7() {
       <div className="warn-icon">!</div>
       <h2 className="center-title">Kamu masih punya antrean aktif</h2>
       <p className="center-sub">Selesaikan atau batalkan antrean ini sebelum mengambil yang lain.</p>
-      <div className="list-card">
-        <div className="body">
+      
+      <div className="active-card">
+        <div className="active-header">
           <b>Poli Umum · dr. Rina Kusuma</b>
-          <div className="row-badges"><Badge tone="sedang">Menunggu</Badge><span className="est">~30 menit lagi</span></div>
-          <small>Kamu tidak perlu mengambil nomor baru.</small>
+          <Badge tone="sedang">Menunggu</Badge>
         </div>
+        <div className="active-body">
+          <span>U-48</span>
+          <b>~30 menit lagi</b>
+        </div>
+        <p>Kamu tidak perlu mengambil nomor baru.</p>
       </div>
+
       <div className="bottom-cta">
         <Button variant="orange" onClick={() => nav('/estimasi/antrean-saya')}>Lihat Antrean Saya</Button>
         <Button variant="outline-danger" onClick={() => nav('/registrasi/batal')}>Batalkan Antrean Ini</Button>

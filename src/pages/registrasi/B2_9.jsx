@@ -9,16 +9,27 @@ export default function B2_9() {
   return (
     <PhoneFrame caption="B2.9 Batalkan Booking — Bottom Sheet.">
       <TopBar title="Antrean Saya" />
-      <div className="sheet-bg">
+      
+      {/* Latar belakang konten yang gelap/blur */}
+      <div className="sheet-bg" style={{ backgroundColor: 'rgba(0,0,0,0.05)', borderRadius: '12px', margin: '0 -18px', flex: 1 }}>
+        
+        {/* Bottom Sheet */}
         <div className="sheet">
           <div className="sheet-handle" />
           <h3>Batalkan booking ini?</h3>
-          <p className="muted">Pembatalan gratis. Slot 09.30 akan otomatis dialihkan ke pasien berikutnya.</p>
+          <p className="muted" style={{ marginTop: '4px', marginBottom: '20px' }}>
+            Pembatalan gratis. Slot 09.30 akan otomatis dialihkan ke pasien berikutnya.
+          </p>
+          
           <div className="bottom-cta">
-            <Button variant="outline-danger" onClick={() => nav('/registrasi/berhasil')}>Ya, Batalkan Booking</Button>
+            {/* Jika Ya: Kembali ke Beranda (Klinik) */}
+            <Button variant="outline-danger" onClick={() => nav('/registrasi/klinik')}>Ya, Batalkan Booking</Button>
+            
+            {/* Jika Tidak: Kembali ke halaman sebelumnya */}
             <Button variant="secondary" onClick={() => nav(-1)}>Tidak, Pertahankan</Button>
           </div>
         </div>
+        
       </div>
     </PhoneFrame>
   );

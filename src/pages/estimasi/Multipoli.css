@@ -1,0 +1,189 @@
+/* =========================================
+   HEADER HIJAU MULTIPOLI
+   ========================================= */
+.mp-hero {
+  background-color: var(--teal-800);
+  border-radius: 20px;
+  padding: 20px;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.mp-hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mp-hero-content small {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.mp-hero-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.mp-hero-content p {
+  font-size: 11px;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.mp-hero-count {
+  text-align: right;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.mp-hero-count h1 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: 800;
+}
+
+.mp-hero-count span {
+  font-size: 12px;
+}
+
+/* =========================================
+   FILTER ROW (SEMUA POLI, SEDANG BUKA, DLL)
+   ========================================= */
+.mp-filter-row {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+  scrollbar-width: none; /* Firefox */
+}
+.mp-filter-row::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.mp-filter {
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #fff;
+  color: var(--teal-700);
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  border: 1px solid var(--gray-200);
+  transition: all 0.2s;
+}
+
+.mp-filter.active {
+  background-color: var(--teal-700);
+  color: #fff;
+  border-color: var(--teal-700);
+}
+
+/* =========================================
+   SECTION TITLE
+   ========================================= */
+.mp-section-title {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: var(--gray-900);
+  font-weight: 700;
+}
+
+/* =========================================
+   CARD LIST (POLI UMUM, GIGI, PSIKOLOGI)
+   ========================================= */
+.mp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mp-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 1px solid var(--gray-200);
+}
+
+.mp-card-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.mp-card-header b {
+  font-size: 16px;
+  color: var(--gray-900);
+}
+
+.mp-card-header span {
+  font-size: 13px;
+  color: var(--gray-700);
+  margin-top: 2px;
+}
+
+.mp-card-body {
+  margin-bottom: 12px;
+}
+
+.mp-status {
+  font-size: 11px;
+  color: var(--teal-700);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.mp-number {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--gray-900);
+  margin: 0 0 10px 0;
+}
+
+.mp-progress-bg {
+  height: 8px;
+  background-color: var(--gray-200);
+  border-radius: 999px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.mp-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.3s;
+}
+
+.mp-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mp-info-text {
+  font-size: 12px;
+  color: var(--gray-500);
+}
+
+.mp-btn {
+  padding: 10px 16px;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.mp-btn:active {
+  opacity: 0.8;
+}

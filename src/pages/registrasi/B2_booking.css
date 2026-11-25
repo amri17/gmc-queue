@@ -1,29 +1,33 @@
 .success-header { text-align: center; padding: 30px 0 16px; }
-.success-header.teal { background: var(--teal-700); color: #fff; margin: -4px -18px 0; padding: 40px 18px 28px; border-radius: 0 0 24px 24px; }
+.success-header.teal-full { 
+  background: var(--teal-700); 
+  color: #fff; 
+  margin: -4px -18px 0; 
+  padding: 40px 18px 24px; 
+  border-radius: 0 0 24px 24px; 
+}
 .success-header .check {
-  width: 60px; height: 60px; background: var(--green-100); color: var(--green-500); border-radius: 50%;
-  display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 700;
-  margin: 0 auto 12px;
+  width: 64px; height: 64px; background: #fff; color: var(--teal-700); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800;
+  margin: 0 auto 14px; border: 4px solid rgba(255,255,255,0.2);
 }
-.success-header .check.white { background: #fff; color: var(--green-500); }
-.success-header h3 { font-size: 16px; }
-.success-header p { font-size: 11.5px; opacity: .85; margin-top: 4px; }
-.ticket {
-  background: #fff; border-radius: var(--radius-lg); padding: 16px;
+.success-header h3 { font-size: 17px; font-weight: 800; }
+.success-header p { font-size: 12px; opacity: .9; margin-top: 4px; }
+
+.ticket-merged {
+  background: #fff; border-radius: var(--radius-lg); padding: 20px 16px;
   box-shadow: var(--shadow-card); border: 1px solid var(--gray-200);
-  margin: 16px 0; display: flex; flex-direction: column; gap: 10px;
+  margin: 20px 0; display: flex; flex-direction: column; align-items: center;
 }
-.ticket small { font-size: 10.5px; color: var(--gray-500); font-weight: 700; letter-spacing: 0.5px; }
-.big-num { font-size: 44px; font-weight: 800; color: var(--teal-900); text-align: center; letter-spacing: 1px; }
-.big-num.small { font-size: 22px; letter-spacing: 1.5px; }
-.ticket .row { display: flex; justify-content: space-between; font-size: 12px; padding: 6px 0; border-bottom: 1px dashed var(--gray-200); }
-.ticket .row:last-of-type { border-bottom: none; }
-.ticket .row span { color: var(--gray-500); }
-.ticket .row b { color: var(--gray-900); }
-.ticket .sub { font-size: 10.5px; color: var(--gray-500); text-align: center; line-height: 1.5; }
-.date-row { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
-.date-chip { padding: 6px 10px; border: 1.5px solid var(--gray-300); border-radius: 8px; font-size: 11px; cursor: pointer; }
-.date-chip.active { background: var(--teal-700); color: #fff; border-color: var(--teal-700); }
-.session-list { display: flex; gap: 6px; margin-top: 12px; flex-wrap: wrap; }
-.session { padding: 6px 10px; border: 1.5px solid var(--gray-300); border-radius: 8px; font-size: 11px; cursor: pointer; }
-.session.active { background: var(--orange-500); color: #fff; border-color: var(--orange-500); }
+.ticket-label { font-size: 10.5px; color: var(--gray-500); font-weight: 700; letter-spacing: 0.5px; margin-bottom: 8px; }
+.big-num { font-size: 48px; font-weight: 800; color: var(--teal-900); letter-spacing: 2px; margin-bottom: 16px; }
+
+.stat-box { display: flex; width: 100%; border-radius: 12px; overflow: hidden; border: 1px solid var(--gray-200); margin-bottom: 14px; }
+.stat-item { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 10px 0; background: var(--teal-50); border-right: 1px solid var(--gray-200); }
+.stat-item:last-child { border-right: none; }
+.stat-item span { font-size: 10px; color: var(--gray-500); font-weight: 600; }
+.stat-item b { font-size: 14px; color: var(--teal-800); margin-top: 2px; }
+.stat-item.highlight { background: var(--amber-100); }
+.stat-item.highlight b { color: var(--orange-600); }
+
+.ticket-note { font-size: 11px; color: var(--gray-500); text-align: center; line-height: 1.5; }

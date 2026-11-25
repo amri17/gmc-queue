@@ -1,22 +1,71 @@
-.app-header { display: flex; align-items: center; gap: 8px; padding: 10px 0; }
-.logo-sm { width: 36px; height: 36px; background: var(--teal-700); color: #fff; border-radius: 10px;
-  display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px; }
-.app-header small { font-size: 10px; color: var(--gray-500); }
-.hero { background: var(--teal-700); color: #fff; border-radius: var(--radius-lg); padding: 16px; margin: 8px 0 16px; }
-.hero small { font-size: 11px; opacity: .8; }
-.hero h3 { font-size: 16px; margin: 4px 0; }
-.hero p { font-size: 11px; margin: 0; opacity: .85; }
-h4 { font-size: 13px; margin: 12px 0 8px; }
-.list-card {
-  display: flex; gap: 10px; align-items: center; background: #fff;
-  border-radius: var(--radius-lg); padding: 12px; margin-bottom: 10px;
-  box-shadow: var(--shadow-card); border: 1px solid var(--gray-200);
+.app-header { display: flex; align-items: center; gap: 10px; padding: 10px 0; }
+.logo-sm { width: 38px; height: 38px; background: var(--teal-700); color: #fff; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 13px; }
+.header-text { display: flex; flex-direction: column; }
+.header-text b { font-size: 13px; color: var(--teal-900); }
+.header-text small { font-size: 10px; color: var(--teal-600); font-weight: 600; }
+
+.hero { background: var(--teal-700); color: #fff; border-radius: var(--radius-lg); padding: 16px; margin: 12px 0 20px; }
+.hero small { font-size: 11px; opacity: .9; font-weight: 500; }
+.hero h3 { font-size: 15px; margin: 4px 0 6px; font-weight: 700; }
+.hero p { font-size: 11.5px; margin: 0; opacity: .9; }
+
+h4 { font-size: 13px; margin: 0 0 10px; color: var(--gray-900); font-weight: 700; }
+
+/* KARTU KLINIK */
+.list-card-klinik {
+  display: flex; 
+  align-items: center; /* Semua isi di tengah secara vertikal */
+  justify-content: space-between;
+  background: #fff;
+  border-radius: var(--radius-lg); 
+  padding: 14px; 
+  margin-bottom: 12px;
+  border: 1.5px solid var(--teal-200);
+  cursor: pointer;
 }
-.avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--teal-100);
-  color: var(--teal-700); font-weight: 800; display: flex; align-items: center; justify-content: center; }
-.list-card .body { flex: 1; display: flex; flex-direction: column; gap: 4px; }
-.list-card .body b { font-size: 13px; }
-.list-card .body small { font-size: 10px; color: var(--gray-500); }
-.row-badges { display: flex; align-items: center; gap: 8px; margin-top: 2px; }
-.est { font-size: 13px; font-weight: 700; color: var(--teal-700); }
-.link { color: var(--teal-700); font-size: 11.5px; font-weight: 700; }
+
+.avatar { 
+  width: 38px; height: 38px; border-radius: 50%; 
+  background: var(--teal-100); color: var(--teal-800); 
+  font-weight: 800; display: flex; align-items: center; justify-content: center; 
+  font-size: 16px; flex-shrink: 0; margin-right: 12px;
+}
+
+/* BAGIAN TENGAH */
+.list-card-klinik .body { 
+  flex: 1; display: flex; flex-direction: column; gap: 4px; 
+}
+.list-card-klinik .body b { 
+  font-size: 13px; color: var(--teal-900); 
+}
+
+.sub-row { 
+  display: flex; align-items: center; gap: 8px; 
+}
+.sub-row small { 
+  font-size: 10.5px; color: var(--gray-500); 
+}
+.sub-row .est { 
+  font-size: 12.5px; font-weight: 800; 
+}
+
+/* Warna Teks Kuning & Hijau */
+.text-green { color: var(--green-500) !important; }
+.text-amber { color: #EAB308 !important; }
+
+/* BAGIAN KANAN (Badge & Pilih) */
+.right-col { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-end; /* Rata kanan */
+  justify-content: center;
+  gap: 6px; 
+  flex-shrink: 0; 
+  margin-left: 8px;
+}
+
+.link-pilih { 
+  color: var(--teal-700); 
+  font-size: 11px; 
+  font-weight: 700; 
+}
