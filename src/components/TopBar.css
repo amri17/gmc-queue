@@ -1,0 +1,22 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0 12px;
+  flex-shrink: 0;
+}
+.topbar .back {
+  border: none;
+  background: var(--teal-50);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: var(--teal-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topbar .titles { display: flex; flex-direction: column; gap: 2px; }
+.topbar h3 { font-size: 16px; color: var(--gray-900); }
+.topbar .step { font-size: 11px; color: var(--teal-700); font-weight: 600; }

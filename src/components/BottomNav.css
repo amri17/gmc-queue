@@ -1,0 +1,12 @@
+.bottom-nav {
+  display: flex; justify-content: space-around; align-items: center;
+  padding: 12px 4px 10px;
+  border-top: 1px solid var(--gray-200);
+  font-size: 11px;
+  color: var(--gray-500);
+  margin-top: auto;
+  flex-shrink: 0;
+  background: #fff;
+}
+.bottom-nav span { padding: 4px 10px; cursor: pointer; border-radius: 999px; }
+.bottom-nav .active { color: var(--teal-700); font-weight: 700; border: 1.5px solid var(--teal-700); }

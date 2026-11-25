@@ -1,0 +1,42 @@
+.app-header { display: flex; align-items: center; gap: 8px; padding: 10px 0; }
+.logo-sm { width: 36px; height: 36px; background: var(--teal-700); color: #fff; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px; }
+.app-header > div:nth-child(2) { flex: 1; }
+.app-header small { font-size: 10px; color: var(--gray-500); }
+.app-header b { font-size: 13px; }
+.center-sub { text-align: center; font-size: 11.5px; color: var(--gray-500); margin-top: 6px; }
+.ring-card { background: #fff; border-radius: var(--radius-lg); padding: 18px 14px; border: 1px solid var(--gray-200); box-shadow: var(--shadow-card); text-align: center; margin-bottom: 12px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.ring-card > small { font-size: 11px; color: var(--gray-500); }
+.stat-mini { display: flex; justify-content: space-between; padding: 12px; background: #fff; border-radius: var(--radius-lg); border: 1px solid var(--gray-200); margin-bottom: 12px; }
+.stat-mini div { display: flex; flex-direction: column; gap: 2px; align-items: center; }
+.stat-mini span { font-size: 10.5px; color: var(--gray-500); }
+.stat-mini b { font-size: 14px; }
+.orange { color: var(--orange-600) !important; }
+.notif-row { display: flex; justify-content: space-between; align-items: center; background: #fff; border-radius: var(--radius-lg); padding: 12px; border: 1px solid var(--gray-200); margin-bottom: 12px; font-size: 12px; }
+.toggle-on { width: 38px; height: 22px; background: var(--teal-700); border-radius: 999px; position: relative; }
+.toggle-on::after { content: ''; position: absolute; right: 3px; top: 3px; width: 16px; height: 16px; background: #fff; border-radius: 50%; }
+.detail-hero { background: #fff; border-radius: var(--radius-lg); padding: 20px 14px; border: 1px solid var(--gray-200); text-align: center; margin-bottom: 12px; }
+.detail-hero small { font-size: 11px; color: var(--gray-500); display: block; margin: 6px 0 4px; }
+.detail-hero h1 { font-size: 40px; color: var(--orange-600); margin: 4px 0; }
+.detail-hero h1 span { font-size: 16px; font-weight: 500; color: var(--gray-700); }
+.detail-hero p { font-size: 11px; color: var(--gray-500); }
+.card-info { background: #fff; border-radius: var(--radius-lg); padding: 14px; border: 1px solid var(--gray-200); margin-bottom: 12px; box-shadow: var(--shadow-card); }
+.card-info > b { font-size: 13px; display: block; margin-bottom: 8px; }
+.info-row { display: flex; justify-content: space-between; font-size: 12px; padding: 6px 0; border-bottom: 1px dashed var(--gray-200); }
+.info-row:last-child { border-bottom: none; }
+.info-row span { color: var(--gray-500); }
+.chart { display: flex; align-items: flex-end; gap: 6px; height: 90px; margin: 12px 0 4px; }
+.bar-col { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; height: 100%; justify-content: flex-end; }
+.bar-col .bar { width: 100%; border-radius: 4px 4px 0 0; min-height: 4px; }
+.bar-col small { font-size: 8.5px; color: var(--gray-400); }
+.hint { font-size: 10.5px; color: var(--gray-500); }
+.alert-amber { background: var(--amber-100); color: var(--amber-600); padding: 10px 12px; border-radius: var(--radius-md); font-size: 11.5px; margin-bottom: 12px; font-weight: 600; line-height: 1.4; }
+.lock-screen { flex: 1; display: flex; flex-direction: column; padding-top: 20px; }
+.lock-date { text-align: center; font-size: 12px; opacity: .8; }
+.lock-time { text-align: center; font-size: 62px; font-weight: 300; letter-spacing: 2px; margin: 4px 0 30px; }
+.notif-card { background: rgba(255,255,255,0.12); backdrop-filter: blur(8px); border-radius: var(--radius-lg); padding: 12px; display: flex; gap: 10px; margin-bottom: 10px; }
+.notif-logo { width: 32px; height: 32px; background: rgba(255,255,255,0.2); color: #fff; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 10px; flex-shrink: 0; }
+.notif-body { flex: 1; }
+.notif-head { display: flex; justify-content: space-between; font-size: 10.5px; opacity: .7; margin-bottom: 2px; }
+.notif-title { font-size: 12.5px; display: block; margin-bottom: 4px; }
+.notif-body p { font-size: 11px; opacity: .85; line-height: 1.4; }

@@ -1,0 +1,17 @@
+.btn {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: var(--radius-md);
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  transition: opacity .15s, transform .1s;
+}
+.btn:active { transform: scale(0.99); }
+.btn-primary { background: var(--teal-700); color: #fff; }
+.btn-secondary { background: var(--teal-100); color: var(--teal-700); }
+.btn-orange { background: var(--orange-500); color: #fff; }
+.btn-outline-danger { background: #fff; color: var(--red-500); border: 1.5px solid var(--red-500); }
+.btn-outline-teal { background: #fff; color: var(--teal-700); border: 1.5px solid var(--teal-700); }
+.btn-ghost { background: transparent; color: var(--teal-700); }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }

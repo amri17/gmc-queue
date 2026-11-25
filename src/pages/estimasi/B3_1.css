@@ -1,0 +1,17 @@
+.filter-row { display: flex; gap: 6px; margin: 4px 0 14px; }
+.filter { padding: 5px 10px; border: 1.5px solid var(--gray-300); border-radius: 999px; font-size: 10.5px; font-weight: 600; cursor: pointer; color: var(--gray-500); }
+.filter.active { background: var(--teal-700); color: #fff; border-color: var(--teal-700); }
+.est-card {
+  background: #fff; border-radius: var(--radius-lg); padding: 12px;
+  box-shadow: var(--shadow-card); border: 1px solid var(--gray-200);
+  margin-bottom: 10px;
+}
+.est-top { display: flex; justify-content: space-between; align-items: center; }
+.est-top b { font-size: 13px; }
+.est-card small { font-size: 10.5px; color: var(--gray-500); display: block; margin-top: 3px; }
+.est-bottom { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+.est-bottom .bar { flex: 1; height: 6px; background: var(--gray-100); border-radius: 999px; overflow: hidden; }
+.est-bottom .bar > div { height: 100%; background: var(--teal-700); }
+.est-num { font-size: 20px; font-weight: 800; color: var(--teal-900); }
+.est-num small { font-size: 10.5px; color: var(--gray-500); font-weight: 500; }
+.updated { text-align: center; font-size: 10.5px; color: var(--gray-500); margin: 12px 0; }
